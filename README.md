@@ -30,7 +30,6 @@ conda env create -f requiremnets.yaml
 
 # Step 4: Activate the conda environment
 conda activate my_env
-
 ```
 ## Preparing the dataset for training
 You need to make two folders:
