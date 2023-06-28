@@ -5,7 +5,7 @@
 ### Implementation of Semantic segmentation using keras model and applying class based style transfer
 
 <p align="center">
-  <img src="/home/ritesh/git_workspace/InteriorAI/Documentation Images/basicflowchart.png" alt="Interior AI" width="50%" height="50%">
+  <img src="Documentation Images/basicflowchart.png" alt="Interior AI" width="50%" height="50%">
 </p>
 
 
@@ -31,11 +31,7 @@ conda env create -f requiremnets.yaml
 # Step 4: Activate the conda environment
 conda activate my_env
 
-# Step 5: Deactivate the conda environment when finished
-conda deactivate
-
 ```
-
 ## Preparing the dataset for training
 You need to make two folders:
 
@@ -81,6 +77,11 @@ To perform class-based style transfer, three steps need to be followed:
   </p>
 
 - **Class based Style Transfer**
+
+    <p align="center">
+    <img src="Documentation Images/class_based_syle_transfer.png" alt = "Class Identification" width="50%" height = "50%">
+  </p>
+
     - The basic formula used to perform this task is **U(c, S) = (Rc ∗ TS) + (1 − Rc)∗ I** where,
         - U(c, S) represents the stylized output image for a specific class c, given a style image S.
         - Rc is the binary mask for the class c, where Rc = 1 for pixels belonging to class c (foreground) and Rc = 0 for pixels outside class c (background).
@@ -97,8 +98,3 @@ To perform class-based style transfer, three steps need to be followed:
     <p align="center">
     <img src="Documentation Images/final_output_cbs.png" alt = "Class Based Style Transfer" >
     </p>
-
-
----
-## Conclusion 
-Class-specific style transfer is a method that combines semantic segmentation and neural style transfer to apply different artistic styles to specific parts of an image. By understanding the content of the image and identifying different classes within it, we can selectively apply styles to enhance the visual appeal of each class. This approach allows for more creative and visually striking transformations, giving us greater control over how different elements in the image look. Class-specific style transfer brings together the understanding of image content and the application of artistic expression, offering exciting opportunities for image editing and visual storytelling.
