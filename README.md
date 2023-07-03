@@ -34,12 +34,13 @@ conda activate my_env
 ## Preparing the dataset for training
 You need to make two folders:
 
-- Images Folder - For all the training images
+- Images Folder - For all the images
    - Check the mode of the image and convert it to 24-bit(RGB) ,if it is initially in 32-bit(RGBA) format
 - Mask Folder - For the corresponding ground truth segmentation images
     - Convert the ground truth segmentation into the semantic labels (*assigning class categories to each pixel according to the rgb value of the classes in the given ground truth* ) 
     - Save the labels in the image form in 8-bit(L Mode)
 - Make sure that the naming and size is same of the image and their corresponding mask and semantic labels
+- Divide the images and the corresponding semantic labels into separate test and train folders
 - For the segmentation maps, do not use the jpg format as jpg is lossy and the pixel values might change. Use png format instead
 
 ## [Train the model and make Predictions](https://github.com/riteshcanfly/InteriorAI/blob/Atithi/Semantic_Segmentation/Semantic_Segmentation/Semantic_Segmentation_Model.ipynb)
