@@ -39,7 +39,7 @@ You need to make two folders:
 - Mask Folder - For the corresponding ground truth segmentation images
     - Convert the ground truth segmentation into the semantic labels (*assigning class categories to each pixel according to the rgb value of the classes in the given ground truth* ) 
     - Save the labels in the image form in 8-bit(L Mode)
-- Make sure that the naming and size is same of the image and their corresponding mask and semantic labels
+- Make sure that the naming and size are the same as the image and their corresponding mask and semantic labels
 - Divide the images and the corresponding semantic labels into separate test and train folders
 - For the segmentation maps, do not use the jpg format as jpg is lossy and the pixel values might change. Use png format instead
 
